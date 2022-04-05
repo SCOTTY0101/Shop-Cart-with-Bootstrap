@@ -1,2 +1,3 @@
 # Shop-Cart-with-Bootstrap
-Shop Cart
+Shopping Cart.
+CDN bootstrap added.
