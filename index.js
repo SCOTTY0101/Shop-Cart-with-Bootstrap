@@ -1,7 +1,7 @@
 //Check local storge is browser support.
 
 function CheckBrowser() {
-    if ('localStorage' in window && window['localStorage'] !==null) {
+    if ('localStorage' in window && window['localStorage'] !== null) {
         return true;
     } else {
         return false;
@@ -14,7 +14,6 @@ function doShowAll() {
     if (CheckBrowser()) {
         let key = '';
         let list = "<tr><th>Item</th><th>Value</th></tr>\n";
-       // let i = 0;
 
         for (let i = 0 ; i <= localStorage.length-1; i++) {
             key =localStorage.key(i);
@@ -42,7 +41,7 @@ function ModifyItem() {
     let name1 = document.forms.ShoppingList.name.value;
     let data1 = document.forms.ShoppingList.data.value;
 
-    if (localStorage.getItem(name1) !=null) {
+    if (localStorage.getItem(name1) != null) {
             localStorage.setItem(name1, data1);
             document.forms.ShoppingList.data.value = localStorage.getItem(name1);
     }
